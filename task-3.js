@@ -5,7 +5,8 @@ let cekNilai = function (nilaiAwal, nilaiAkhir, dataArray) {
     console.log('Nilai akhir harus lebih besar dari nilai awal');
   } else if (nilaiAwal < nilaiAkhir) {
     let result = dataArray.filter((n) => n > nilaiAwal && n < nilaiAkhir);
-    console.log(result);
+    let finalResult = result.sort();
+    console.log(finalResult);
   }
 };
 
